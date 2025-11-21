@@ -161,7 +161,8 @@ public extension Array where Element == [(real: Double, imagine: Double)] {
             
             var irfftMatrix = trimmedMatrix.irfft
             
-            let ytmp = iFFTWindow.multiplyVector(matrix: irfftMatrix)
+            // let ytmp = iFFTWindow.multiplyVector(matrix: irfftMatrix)
+            let ytmp = irfftMatrix
             
             let ytmpIndex = frame*hopLength;
             
